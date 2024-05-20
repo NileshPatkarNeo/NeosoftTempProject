@@ -1,0 +1,6 @@
+@WebApiCleanWithMediatr_HostAddress = http://localhost:5052
+
+GET {{WebApiCleanWithMediatr_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
