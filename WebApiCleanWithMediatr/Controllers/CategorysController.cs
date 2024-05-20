@@ -33,7 +33,7 @@ namespace WebApiCleanWithMediatr.Controllers
         {
             var query = new GetCategoryByIdQuery(id);
             var category = await _mediator.Send(query);
-
+            
             if (category == null)
                 return NotFound();
             Log.Information("Category Info: {@category}", category);
